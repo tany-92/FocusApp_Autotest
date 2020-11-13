@@ -1,0 +1,17 @@
+testinfo:
+    - id: close_live_001
+      title: 关闭直播
+      execute: 1
+testcase:
+    -
+      element_info: com.sohu.focus.live:id/live_publisher_close_bt
+      find_type: id
+      operate_type: click
+    -
+      element_info: com.sohu.focus.live:id/right
+      find_type: id
+      operate_type: click
+    -
+      element_info: com.sohu.focus.live:id/tv_go_on_live
+      find_type: id
+      operate_type: click
