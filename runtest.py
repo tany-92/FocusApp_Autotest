@@ -6,7 +6,7 @@ import HTMLTestRunner
 from common.sendEmail import Email
 
 email = Email()
-all_case = 'D:\\study\\App-Test\\testcase'
+all_case = 'D:\\study\\FocusApp_Autotest\\testcase'
 # all_case = '/Users/xintudoutest/github/Appium/testcase'
 
 
@@ -32,7 +32,7 @@ def CreateSuite():
 def runtest():
     case = CreateSuite()
     now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
-    filename = 'D:\\study\\App-Test\\report\\' + now + "Myreport.html"
+    filename = 'D:\\study\\FocusApp_Autotest\\report\\' + now + "Myreport.html"
     # filename = '/Users/xintudoutest/github/Appium/report/' + now + "Myreport.html"
     fp = open(filename, 'wb')
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'自动化测试报告', description=u'测试用例结果', tester=u'tester_ty')

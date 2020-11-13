@@ -9,7 +9,7 @@ import logging
 """
 
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
-log_path = PATH("D:\study\App-Test\log")
+log_path = PATH("D:\\study\\FocusApp_Autotest\\log")
 # log_path = PATH('/Users/xintudoutest/github/Appium/log/')
 
 

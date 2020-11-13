@@ -90,7 +90,7 @@ class BaseOperate:
         """
 
         now = time.strftime("%Y%m%d.%H.%M.%S")
-        self.driver.get_screenshot_as_file('D:\\study\\App-Test\\screenshot' + now + '.png')
+        self.driver.get_screenshot_as_file('D:\\study\\FocusApp_Autotest\\screenshot' + now + '.png')
         # self.driver.get_screenshot_as_file('/Users/xintudoutest/github/Appium/screenshot/' + now + '.png')
         print('screenshot:', now, '.png')
 

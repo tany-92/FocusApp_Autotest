@@ -33,7 +33,7 @@ class Email:
         """
 
         PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
-        report_path = PATH("D:\\study\\App-Test\\report")
+        report_path = PATH("D:\\study\\FocusApp_Autotest\\report")
 
         lists = os.listdir(report_path)
         lists.sort(key=lambda fn: os.path.getmtime(report_path+"/"+fn))

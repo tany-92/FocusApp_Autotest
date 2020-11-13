@@ -7,7 +7,7 @@ from common.getDriver import driver
 PATH = lambda p: os.path.abspath(
         os.path.join(os.path.dirname(__file__), p)
     )
-yamlpath = PATH("D:\\study\\App-Test\\testyaml\\live\\01_StartLive.yaml")
+yamlpath = PATH("D:\\study\\FocusApp_Autotest\\testyaml\\live\\01_StartLive.yaml")
 
 
 class StartLive:
