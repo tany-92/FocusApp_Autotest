@@ -1,11 +1,12 @@
 # coding=utf-8
 
 import unittest
-from page.page_login.page_EmailLogin import EmailLogin
+from page.page_login.page_PhoneLogin import EmailLogin
 from page.page_live.page_start_live import StartLive
 from page.page_live.page_close_live import CloseLive
 from common.getDriver import driver
 import time
+from common.sendEmail import Email
 
 
 class LoginTest(unittest.TestCase):
@@ -35,5 +36,6 @@ if __name__ == "__main__":
     suite = unittest.TestSuite()
     suite.addTest(LoginTest('test_01'))
     suite.addTest(LoginTest('test_02'))
-    suite.addTest(LoginTest('test_02'))
+    suite.addTest(LoginTest('test_03'))
     unittest.TextTestRunner(verbosity=1).run(suite)
+    Email.send_mail()

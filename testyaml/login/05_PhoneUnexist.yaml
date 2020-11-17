@@ -1,0 +1,36 @@
+testinfo:
+    - id: login_005
+      title: 账号密码登录时账号不存在
+      execute: 5
+testcase:
+    -
+      element_info: com.sohu.focus.live:id/personal_information_layout
+      find_type: id
+      operate_type: click
+    -
+      element_info: com.sohu.focus.live:id/login_to_account_auth
+      find_type: id
+      operate_type: click
+    -
+      element_info: com.sohu.focus.live:id/login_account_phone_num
+      find_type: id
+      operate_type: send_keys
+      send_content: 13025802580
+    -
+      element_info: 密码
+      find_type: text
+      operate_type: send_keys
+      send_content: 442180
+    -
+      element_info: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.CheckBox
+      find_type: xpath
+      operate_type: click
+    -
+      element_info: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView[2]
+      find_type: xpath
+      operate_type: click
+    -
+      element_info: 账号不存在
+      find_type: toast
+      operate_type: assert
+

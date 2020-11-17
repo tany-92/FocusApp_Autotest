@@ -1,0 +1,28 @@
+   -
+      element_info: com.sohu.focus.live:id/right
+      find_type: id
+      operate_type: click
+   -
+      element_info: com.sohu.focus.live:id/left
+      find_type: id
+      operate_type: click
+   -
+      element_info: "自动化测试"正在直播，是否继续？
+      find_type: text
+      operate_type: click
+   -
+      element_info: com.sohu.focus.live:id/right
+      find_type: id
+      operate_type: click
+   -
+      element_info: com.android.permissioncontroller:id/permission_allow_button
+      find_type: id
+      operate_type: click
+   -
+      element_info: com.sohu.focus.live:id/right
+      find_type: id
+      operate_type: click
+   -
+      element_info: com.android.permissioncontroller:id/permission_allow_button
+      find_type: id
+      operate_type: click

@@ -1,0 +1,21 @@
+testinfo:
+    - id: login_002
+      title: 退出登录
+      execute: 2
+testcase:
+    -
+      element_info: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.TabHost/android.widget.LinearLayout/android.widget.TabWidget/android.widget.RelativeLayout[4]
+      find_type: xpath
+      operate_type: click
+    -
+      element_info: com.sohu.focus.live:id/my_setting_layout
+      find_type: id
+      operate_type: click
+    -
+      element_info: com.sohu.focus.live:id/logout
+      find_type: id
+      operate_type: click
+    -
+      element_info: com.sohu.focus.live:id/right
+      find_type: id
+      operate_type: click

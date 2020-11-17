@@ -79,6 +79,16 @@ class Operate:
             elif self.yaml.get_operate_type(i) == 'swipe_down':
                 for n in range(self.yaml.get_backtimes(i)):
                     self.baseoperate.swipe_down()
+            elif self.yaml.get_operate_type(i) == 'swipe_left':
+                for n in range(self.yaml.get_backtimes(i)):
+                    self.baseoperate.swipe_left()
+            elif self.yaml.get_operate_type(i) == 'swipe_right':
+                for n in range(self.yaml.get_backtimes(i)):
+                    self.baseoperate.swipe_right()
+            #判断是否是键盘键入
+            #elif self.yaml.get_operate_type(i) == 'keyevent':
+             #   self.baseoperate.get_keyevent(self.yaml.get_send_content(i))
+
 
     def back_home(self):
 
@@ -87,23 +97,4 @@ class Operate:
         """
 
         self.baseoperate.backpage(u'订单')
-
-if __name__ == '__main__':
-    path = 'D:/study/App-Test/testyaml/login/01_EmailLogin.yaml'
-    desired_caps = {}
-    desired_caps['deviceName'] = '66J5T18A24032566'
-    desired_caps['platformName'] = 'Android'
-    desired_caps['platformVersion'] = '10'
-    desired_caps['appPackage'] = 'com.sohu.focus.live'
-    desired_caps['appActivity'] = '.main.MainActivity'
-    desired_caps['automationName'] = 'uiautomator2'
-    desired_caps['unicodeKeyboard'] = True
-    desired_caps['resetKeyboard'] = True
-    # desired_caps['noReset'] = True
-    driver = webdriver.Remote(command_executor="http://127.0.0.1:4723/wd/hub", desired_capabilities=desired_caps)
-
-    operate = Operate(path,driver)
-    operate.check_operate_type()
-
-
 

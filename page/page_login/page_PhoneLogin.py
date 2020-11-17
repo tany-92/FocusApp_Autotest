@@ -7,9 +7,9 @@ from common.getDriver import driver
 PATH = lambda p: os.path.abspath(
         os.path.join(os.path.dirname(__file__), p)
     )
-yamlpath = PATH("D:\\study\\FocusApp_Autotest\\testyaml\\login\\01_EmailLogin.yaml")
+yamlpath = PATH("D:\\study\\FocusApp_Autotest\\testyaml\\login\\01_PhoneLogin.yaml")
 
-class EmailLogin:
+class PhoneLogin:
 
     def __init__(self, driver):
         self.path = yamlpath

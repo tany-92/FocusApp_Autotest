@@ -1,11 +1,10 @@
 testinfo:
     - id: start_live_001
-      title: 发起直播
+      title: 发起竖屏直播
       execute: 1
 testcase:
     -
-      element_info:
-        /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.TabHost/android.widget.LinearLayout/android.widget.TabWidget/android.widget.RelativeLayout[2]
+      element_info: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.TabHost/android.widget.LinearLayout/android.widget.TabWidget/android.widget.RelativeLayout[2]
       find_type: xpath
       operate_type: click
     -
@@ -17,23 +16,11 @@ testcase:
       find_type: id
       operate_type: click
     -
-      element_info: com.sohu.focus.live:id/right
+      element_info: com.sohu.focus.live:id/cover_bg
       find_type: id
       operate_type: click
     -
-      element_info: com.sohu.focus.live:id/left
-      find_type: id
-      operate_type: click
-    -
-      element_info: "自动化测试"正在直播，是否继续？
-      find_type: text
-      operate_type: click
-    -
-      element_info: com.sohu.focus.live:id/right
-      find_type: id
-      operate_type: click
-    -
-      element_info: com.android.permissioncontroller:id/permission_allow_button
+      element_info: com.sohu.focus.live:id/select_photo
       find_type: id
       operate_type: click
     -
@@ -44,15 +31,43 @@ testcase:
       element_info: com.android.permissioncontroller:id/permission_allow_button
       find_type: id
       operate_type: click
-
-
-
-
+    -
+      element_info: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.GridView/android.widget.RelativeLayout[1]/android.widget.ImageView
+      find_type: xpath
+      operate_type: click
+    -
+      element_info: com.sohu.focus.live:id/btn_done
+      find_type: id
+      operate_type: click
+    -
+      element_info: com.sohu.focus.live:id/right
+      find_type: id
+      operate_type: click
+    -
+      element_info: com.android.permissioncontroller:id/permission_allow_button
+      find_type: id
+      operate_type: click
     -
       element_info: com.sohu.focus.live:id/make_room_name
       find_type: id
       operate_type: send_keys
       send_content: 创建自动化测试直播间
+    -
+      element_info: com.sohu.focus.live:id/publish_add_build_tag
+      find_type: id
+      operate_type: click
+    -
+      element_info: com.sohu.focus.live:id/edit_search
+      find_type: id
+      operate_type: send_keys
+      send_content: 测试
+    -
+      operate_type: keyevent
+      send_content: 66
+    -
+      element_info: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout[3]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.TextView[1]
+      find_type: xpath
+      operate_type: click
     -
       element_info: com.sohu.focus.live:id/publish_add_label_tag
       find_type: id

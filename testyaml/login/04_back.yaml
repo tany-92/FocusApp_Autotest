@@ -1,0 +1,10 @@
+testinfo:
+    - id: login_004
+      title: 返回上一级页面
+      execute: 4
+testcase:
+    -
+      element_info: com.sohu.focus.live:id/login_native_title_back
+      find_type: id
+      operate_type: click
+

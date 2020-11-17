@@ -28,6 +28,8 @@ class BaseOperate:
         """
         os.popen("adb shell input keyevent 4")
 
+
+
     def get_window_size(self):
 
         """
@@ -90,7 +92,7 @@ class BaseOperate:
         """
 
         now = time.strftime("%Y%m%d.%H.%M.%S")
-        self.driver.get_screenshot_as_file('D:\\study\\FocusApp_Autotest\\screenshot' + now + '.png')
+        self.driver.get_screenshot_as_file('D:\\study\\FocusApp_Autotest\\screenshot\\' + now + '.png')
         # self.driver.get_screenshot_as_file('/Users/xintudoutest/github/Appium/screenshot/' + now + '.png')
         print('screenshot:', now, '.png')
 
@@ -192,6 +194,22 @@ class BaseOperate:
         except:
             log.error('未定位到class元素：'+'%s' % (name))
             self.screenshot()
+
+
+    '''def get_keyevent(self, content):
+
+        """
+            调用手机键盘
+        """
+
+        try:
+            WebDriverWait(self.driver, 15).until(
+                lambda driver: driver.keyevent(content).is_displayed())
+            elements = self.driver.keyevent(content)
+            return elements
+        except:
+            log.error('未定位到物理按键元素：'+'%s' % (content))
+            self.screenshot()'''
 
 
 
